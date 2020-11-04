@@ -22,7 +22,20 @@ const classe = [
 
 const classeCopia = [...classe].map(element => {
     return {
-        ...element
+        ...element,
+        position: lettereAlfabeto(),
     }
 });
 console.log(classeCopia);
+
+function lettereAlfabeto() {
+    let alfabeto = 'abcdefghijklmnopqrstuwxyz';
+
+    let letteraRandom = alfabeto[randomNumber(0, alfabeto.length -1)];
+
+    return letteraRandom;
+}
+
+function randomNumber(min,max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
