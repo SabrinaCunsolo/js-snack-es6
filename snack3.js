@@ -20,4 +20,9 @@ const classe = [
     }
 ]
 
-const classeCopia = [...classe].map()
+const classeCopia = [...classe].map(element => {
+    return {
+        ...element
+    }
+});
+console.log(classeCopia);
