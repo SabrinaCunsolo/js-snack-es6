@@ -12,7 +12,10 @@
     const numero1 = parseInt(prompt('Inserisci un numero tra 0 e 10'));
     const numero2 = parseInt(prompt('Inserisci un altro numero tra 0 e 10'));
 
+    const nomiSelezionati = [];
+
     nomi.forEach((element, index) => {
         if (numero1 <= index && numero2 >= index) {
+            nomiSelezionati.push(element);
     }
     });
